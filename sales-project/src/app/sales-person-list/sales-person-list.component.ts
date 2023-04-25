@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SalesPerson } from './sales-person';
 
 @Component({
   selector: 'app-sales-person-list',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./sales-person-list.component.css']
 })
 export class SalesPersonListComponent {
-
+  // Create an array of objects
+  salesPersonList: SalesPerson[] = [
+    new SalesPerson("Anup", "Kumar", "anup.kumar@luv2code.com", 50000),
+    new SalesPerson("John", "Doe", "john.doe@luv2code.com", 40000),
+    new SalesPerson("Claire", "Murphy", "claire.murphy@luv2code.com", 90000),
+    new SalesPerson("May", "Truong", "may.truong@luv2code.com", 60000)
+  ];
 }
